@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+  <link rel="stylesheet" href="AddmissionForm.css">
+</head>
+<body>
+    
+    <div class="All">
+        <div class="JSNav" id="JSNav">
+                     <a href="index.html">home</a>
+                    <hr>
+                    <a href="">fees payment </a>
+                    <a href="hostel.html">hostel</a>
+                    <a href="faculty.html">feculty</a>
+                    <a href="">More</a>
+                </div>
+        
+        <div class="header">
+                <div class="logo">
+                    <img id="logo" src="logo.png" alt="logo">
+                </div>
+                
+                <nav>
+   
+                    
+                    <div>
+                        
+      <svg xmlns="http://www.w3.org/2000/svg" width="3vw" height="100%"
+      id="button"
+
+ fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/></a>
+</svg>
+
+
+                    </div>
+                    
+                </nav>
+            </div>
+            
+        <div class="FOne">
+            
+            
+            <div class="FImg">
+                
+            </div>
+            
+            
+            <div class="TowT">
+                    <h1>Faculty</h1>
+                </div>
+            
+            
+            
+            
+            
+        <div class="Form">
+    <form id="admissionForm">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="studentID">Student ID</label>
+        <input type="text" id="studentID" name="studentID" required>
+
+        <label for="gradeLevel">Grade Level</label>
+        <input type="text" id="gradeLevel" name="gradeLevel" required>
+
+        <label for="phoneNumber">Phone Number</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3} [0-9]{3}-[0-9]{4}" placeholder="(000) 000-0000" required>
+        <small>Please enter a valid phone number.</small>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="courseProgram">Course/Program</label>
+        <input type="text" id="courseProgram" name="courseProgram" required>
+
+        <label for="schoolYear">School Year</label>
+        <select id="schoolYear" name="schoolYear" required>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+        </select>
+
+        <label for="parentFirstName">Parent/Guardian First Name</label>
+        <input type="text" id="parentFirstName" name="parentFirstName" required>
+
+        <label for="parentLastName">Parent/Guardian Last Name</label>
+        <input type="text" id="parentLastName" name="parentLastName" required>
+
+        <label for="parentPhoneNumber">Parent/Guardian Phone Number</label>
+        <input type="tel" id="parentPhoneNumber" name="parentPhoneNumber" pattern="[0-9]{3} [0-9]{3}-[0-9]{4}" placeholder="(000) 000-0000" required>
+        <small>Please enter a valid phone number.</small>
+
+        <button type="submit">Submit</button>
+    </form>
+    
+    
+    </div>
+  </div>
+    
+    
+    
+    
+   
+   
+   
+   
+   
+   
+   
+    </div>
+<script>
+      let button = document.getElementById("button");
+
+
+        
+        button.addEventListener("click",()=>{
+           let nav = document.getElementById("JSNav")
+           nav.style.display = "flex";
+           nav.style.height = "80vh"
+           nav.style.animation = "show 2s"
+           
+            
+        });
+        
+        let up = document.getElementById("JSNav");
+        up.addEventListener("click",()=>{
+            let nav = document.getElementById("JSNav")
+           nav.style.animation = "Hidenav 2s"
+            
+            nav.style.height = "0vh"
+            
+        })
+  </script>
+  
+  
+</body>
+</html>
