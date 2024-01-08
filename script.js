@@ -93,5 +93,32 @@ let AddmissionButton = document.getElementById("Addmission");
     
     
     
+    var one = document.getElementById("Wone");
+    var two = document.getElementById("Wtwo");
+    
+    one.addEventListener("click",()=>{
+        one.style.animation = "Wone 1s forwards ease-out"
+        two.style.animation = "Wtwo 1s forwards ease-out"
+    })
+    
+    two.addEventListener("click",()=>{
+        one.style.animation = "rWone 1s forwards ease-out "
+        two.style.animation = "rWtwo 1s forwards ease-out "
+    })
+    
+    
+    
+    
+    let Zero = document.getElementById("zero");
+
+
+        
+        Zero.addEventListener("click",()=>{
+           
+        Zero.style.animation = "zero 1.7s .5s ease-out forwards"
+           
+            
+        });
+    
     
     
