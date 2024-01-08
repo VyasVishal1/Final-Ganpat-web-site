@@ -22,9 +22,67 @@
 .main{
     width: 100vw;
     height: auto;
-    background: black;
+    
     
 }
+
+   
+    .zero{
+        width: 100vw;
+        height: 110vh;
+        background: url("GpWb.mp4");
+        background-repeat: no-repeat;
+        background-size: auto 100vh;
+        position: fixed;
+        overflow: hidden;
+        z-index: 69;
+        animation: ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: zeroImg 5s;
+        
+    }
+    
+    .zero h1{
+        position: absolute;
+        top: 50vh;
+    }
+    
+    @keyframes zeroImg {
+        0%{
+            
+        }
+        
+        100%{
+            right: 0;
+        }
+    }
+    
+    @keyframes zero {
+        0%{
+            
+        }
+        
+        100%{
+            height: 0vh;
+        }
+    }
+    
+    
+    .zero::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: #000000c0;
+    }
+    
+
+
+
+
 
 .OneMain{
     width: 100vw;
@@ -133,7 +191,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 80vh;
     background: #0000007b;
@@ -286,22 +344,7 @@ nav{
 }
 
 
-.second .welcome{
-        
-        
-        z-index: 4;
-        display: flex;
-        
-        justify-content: center;
-        color: transparent;
-        -webkit-text-stroke: 1px white;
-        font-size: 7vw;
-        text-transform: uppercase;
-        transition: all 1s;
-        font-family: 'Oswald', sans-serif;
-        letter-spacing: 2px;
-         
-    }
+
     
     .secondTwo{
         
@@ -329,25 +372,120 @@ nav{
         z-index: 4;
     }
     
-    .welcome .one{
+    .second .welcome{
         
+        width: 100vw;
+        height: 10vh;
+        z-index: 4;
+        margin-top: 5vh;
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+        font-size: 7vw;
+        text-transform: uppercase;
+        transition: all 1s;
+        font-family: 'Oswald', sans-serif;
+        letter-spacing: 2px;
+         overflow: hidden;
+         
     }
     
-    .welcome .two{
-        display: none;
+    .welcome .one{
+        animation:  ;
+        position: relative;
+        text-align: center;
     }
     
-    .welcome  .three{
-        display: none;
+    .welcome .Two{
+        animation: ;
+        position: relative;
+        text-align: center;
+        position: relative;
+        font-size: 10vw;
     }
     
-    .welcome .four{
-        display: none;
+    @keyframes Wone {
+        0%{
+            top: 0;
+        }
+        
+        50%{
+            opacity: 0;
+        }
+        
+        100%{
+            top: -100%;
+        }
     }
     
-    .welcome .five{
-        display: none;
+     @keyframes rWone {
+        0%{
+            
+            top: -100%;
+        }
+        
+        50%{
+            opacity: 0;
+        }
+        
+        100%{
+            top: 0;
+        }
     }
+    
+    @keyframes Wtwo {
+         0%{
+            top: 0;
+            opacity: 0;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            top: -100%;
+        }
+    }
+    
+    @keyframes rWtwo {
+         0%{
+            top: -100%;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            
+            top: 0;
+            opacity: 0;
+        }
+    }
+    
+   
+ 
+    
+    
+    
+    @keyframes Welcome {
+        0%{
+             
+        }
+        
+        25%{
+            
+        }
+        
+        50%{
+            
+        }
+        
+        75%{
+            
+        }
+        
+        100%{
+            
+        }
+    }
+    
     
     .welcome:hover{
         color: white;
@@ -356,18 +494,25 @@ nav{
     }
     
     
+   
+
     
     
     
+    
+   
+
+
+
     .TwoMain{
         width: 100vw;
         height: 100vh;
         background: black;
         color: white;
-        
+
         position: relative;
     }
-    
+
     .TwoMain h1{
         display: flex;
         color: white;
@@ -376,21 +521,21 @@ nav{
         border-bottom: 1px solid black;
         z-index: 4;
     }
-    
-    
+
+
     .Mainswiper{
         width: 100vw;
         height: 50vh;
         z-index: 4;
     }
-    
-    
-     
+
+
+
        .swiper {
       width: 100%;
       height: 100%;
     }
-    
+
     .swiper h1{
         color: black;
     }
@@ -414,27 +559,27 @@ nav{
     .swiper-v {
       background: #eee;
     }
-    
+
     .Gellary{
         width: 100vw;
         height: 30vh;
         color: white;
-        
+
         margin-top: 5vh;
-        
+
     }
-    
+
     .Gellary h1{
         padding: 2vh 0vh;
     }
-    
+
     .Gellary .Photo{
         width: 100vw;
         height: 20vh;
         margin-top: 3vh;
-        
+
     }
-    
+
       .swiper {
       width: 100%;
       height: 100%;
@@ -455,6 +600,9 @@ nav{
       height: 100%;
       object-fit: cover;
     }
+
+
+
     
     
     
@@ -516,7 +664,6 @@ nav{
     
     100%{
         top: -50vh;
-        
         display: none;
     }
         
