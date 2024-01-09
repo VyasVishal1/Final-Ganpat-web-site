@@ -200,7 +200,7 @@ nav{
 
 
 li{
-    padding: 1%;
+    padding: 0%;
 }
 
 .add{
@@ -292,14 +292,15 @@ li{
         
         .BoxS{
             width: 100vw;
-            height: 100vh;
+            height: auto;
             background: black;
         }
         
         .HBox{
             width: 100vw;
-            height: 25vh;
-            margin-bottom: 5vh;
+            height: auto;
+            padding-bottom: 5vh;
+            
             color: white;
             background: #ff0034d9;
         }
@@ -337,7 +338,7 @@ li{
         
         
         .footer {
-    position: relative;
+    
     overflow: hidden;
     z-index: 3;
     border-top: 1px solid white;
