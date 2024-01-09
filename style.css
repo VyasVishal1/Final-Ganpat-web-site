@@ -30,7 +30,8 @@
     .zero{
         width: 100vw;
         height: 110vh;
-        background: url("GpWb.mp4");
+        background: red;
+        box-shadow: inset 0px 0px 1000px #000000bd;
         background-repeat: no-repeat;
         background-size: auto 100vh;
         position: fixed;
@@ -45,8 +46,15 @@
     }
     
     .zero h1{
-        position: absolute;
+        color: white;
+        font-size: 5vh;
         top: 50vh;
+        text-align: center;
+        padding: 2vh;
+    }
+    
+    .zeroC{
+        
     }
     
     @keyframes zeroImg {
@@ -70,14 +78,14 @@
     }
     
     
-    .zero::before{
+    /* .zero::before{
         content: "";
         position: absolute;
         top: 0;
         height: 100%;
         width: 100%;
         background: #000000c0;
-    }
+    } */
     
 
 
