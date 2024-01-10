@@ -98,6 +98,7 @@
     transform: scale(1);
     overflow: hidden;
     box-shadow: inset 0px 0px 50px #020202ac;
+    position: relative;
 }
 
 .Vr{
@@ -121,8 +122,8 @@
 
 
 .AniBox{
-    width: 30vw;
-    height: 30vw;
+    width: 20vw;
+    height: 20vw;
     position: fixed;
     top: 40vh;
     left: 0vw;
@@ -384,7 +385,7 @@ nav{
         transition: all 1s;
         font-family: 'Oswald', sans-serif;
         letter-spacing: 2px;
-         overflow: hidden;
+         overflow:hidden ;
          
     }
     
@@ -392,6 +393,7 @@ nav{
         animation:  ;
         position: relative;
         text-align: center;
+        margin-bottom:5vw; 
     }
     
     .welcome .Two{
@@ -399,7 +401,7 @@ nav{
         position: relative;
         text-align: center;
         position: relative;
-        font-size: 10vw;
+        font-size: 7vw;
     }
     
     @keyframes Wone {
@@ -489,7 +491,7 @@ nav{
     .welcome:hover{
         color: white;
         letter-spacing: 10px;
-        font-size: 6vw;
+        font-size: 5vw;
     }
     
     
@@ -533,6 +535,7 @@ nav{
        .swiper {
       width: 100%;
       height: 100%;
+      overflow: hidden;
     }
 
     .swiper h1{
@@ -989,7 +992,7 @@ nav{
         align-items: center;
         overflow: hidden;
         background: red;
-        position: absolute;
+        position: relative;
         right: 0;
         top: 50vh;
         z-index: 4;
@@ -1029,8 +1032,8 @@ nav{
         width: 100vw;
         height: 400vh;
         z-index: 4;
-        border: 1px solid blue;
-        position: relative;
+        
+        position: ;
         z-index: 4;
         background-color: black;
         color: white;
@@ -1048,7 +1051,7 @@ nav{
     .FiveContent{
         width: 100vw;
         height: 90vh;
-        border: 1px solid green;
+        
         z-index: 5;
         background-color: transparent;
     }
@@ -1056,7 +1059,7 @@ nav{
     .FiveContent .Up,.down{
         width: 100%;
         height: 180vh;
-        border: 1px solid rgb(236, 22, 22);
+        
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -1067,11 +1070,11 @@ nav{
     .FiveBox{
         width: 90%;
         height: 100%;
-        overflow: hidden;
+        overflow: ;
          /* display: flex;
         justify-content: center;
         align-items: center; */
-       
+      
         
         position: relative;
     }
@@ -1081,7 +1084,7 @@ nav{
         height: 80%;
         background: #616161;
         position: relative;
-        overflow-x: hidden;
+        overflow-x: ;
         box-shadow: inset 0px 0px 100px #000000ad;
         border: 2px solid white;
         z-index: 4;
@@ -1104,31 +1107,31 @@ nav{
     
     
     .FiveBox img{
-        height: 100%;
-        position: absolute;
-        top: 0;
+        height: auto;
+        width:50%;
+        
         box-shadow: inset 0px 0px 100px #000000ad;
     }
     
      
-     .imgText{
-         width: 100%;
+     .ImgText{
+         width: 50%;
          /* border-bottom: 2px solid white;
          border-left: 2px solid white;
          border-right: 2px solid white; */
-         height: 55%;
-         position: absolute;
-         top: 45%;
+         height: 100%;
+         color:white;
+         
          
      }
      
-     .imgText h2{
+     .ImgText h2{
          font-size: 200%;
          padding: 6%;
          border-bottom: 5px solid red;
      }
      
-     .imgText p{
+     .ImgText p{
          padding: 6%;
          text-align: justify;
      }
@@ -1256,8 +1259,7 @@ nav{
     color: gray;
 }
 
-
-@media only screen and (max-width: 1500px) {
+@media(max-width: 1200px){
 
 *{
     margin: 0px;
@@ -2272,8 +2274,8 @@ nav{
         width: 100vw;
         height: 100vh;
         z-index: 4;
-        border: 1px solid blue;
-        position: relative;
+       
+       
         z-index: 4;
         background-color: black;
         color: white;
@@ -2291,7 +2293,7 @@ nav{
     .FiveContent{
         width: 100vw;
         height: 90vh;
-        border: 1px solid green;
+        
         z-index: 5;
         background-color: transparent;
     }
@@ -2299,7 +2301,7 @@ nav{
     .FiveContent .Up,.down{
         width: 100%;
         height: 50%;
-        border: 1px solid white;
+       
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -2323,6 +2325,8 @@ nav{
         height: 80%;
         background: #616161;
         position: relative;
+        display: flex;
+        flex-direction: column;
         overflow-x: hidden;
         box-shadow: inset 0px 0px 100px #000000ad;
         border: 2px solid white;
@@ -2346,30 +2350,29 @@ nav{
     
     .FiveBox img{
         height: 45%;
-        position: absolute;
-        top: 0;
+        width: 100%;
+        
         box-shadow: inset 0px 0px 100px #000000ad;
     }
     
      
-     .imgText{
+     .ImgText{
          width: 100%;
          /* border-bottom: 2px solid white;
          border-left: 2px solid white;
          border-right: 2px solid white; */
          height: 55%;
-         position: absolute;
-         top: 45%;
+         
          
      }
      
-     .imgText h2{
+     .ImgText h2{
          font-size: 200%;
          padding: 6%;
          border-bottom: 5px solid red;
      }
      
-     .imgText p{
+     .ImgText p{
          padding: 6%;
          text-align: justify;
      }
